@@ -1,98 +1,87 @@
-/* smooth scrolling */
-/* Fonts: Work Sans, Didact Gothic, Fjalla One */
-/* Colors: #9e9e9e, #fff, #000, #333, #666 */
-
-
-/* font-family: 'Work Sans', sans-serif; */
-/* font-family: 'Didact Gothic', sans-serif; */
-/* font-family: 'Fjalla One', sans-serif; */
+/* =========================================================================================== 
+ * Import fonts from font.google.com
+ */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-head{
+head {
     font-size: 20px;
 }
 
-body {
-    margin: 0;
-}
-
-.header {
-    /* delete when done */
-    /* display: none; */
-
-    height: 150vh;
+/* =========================================================================================== 
+ * The initial page: It's me!
+ */
+ .header {
+    min-height: 100vh;
     text-align: center;
     font-family: 'Work Sans', sans-serif;
     color: black; 
 } 
-
 .header h1 {
+    padding: 7vh;
     font-family: 'Didact Gothic', sans-serif;
-    font-weight: lighter;
-    font-size: 10em;
+    font-size: 12vh;
     text-transform: uppercase;
-    line-height: 130%;
+    /* line-height: 130%; */
 }
-
 .header h2 {
-    margin: 2% auto;
+    /* margin: 2% auto; */
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 5em;
-    font-weight: lighter;
+    font-size: 8vh;
     text-transform: uppercase;
-    line-height: 130%;
+    /* line-height: 130%; */
 }
 
-
+/* =========================================================================================== 
+ * General styling of the project articles
+ */
 article {
-    padding: 10% 10%;
+    min-height: 100vh;
+    padding: 10% 10% 0 10%;
     font-family: 'Work Sans', sans-serif;
 }
-
 article h1 {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 15em;
+    font-size: 20vh;
     text-align: right;
     margin-top: 0;
     margin-bottom: 0;
     transition: 0.5s;
 }
-
 article h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 10em;
+    font-size: 12vh;
     text-transform: uppercase;
 }
-
 article h3 {
-    margin-top: 0;
+    margin-top: 5%; 
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 4vh;
 }
-
 article div {
     margin-top: 7%;
 }
-
 article a {
     margin-top: 7%;
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 2vh;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 1em 1.5em;
+    padding: 2% 3%;
     transition: 0.5s;
 }
-
 article a:hover {
     font-weight: bold;
     transition: 0.5s;
 }
 
-/* ------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------
+ * Into the Darkness
+ * project articles with dark backgrounds
+ */
 
 .dark {
     background-position: center;
@@ -105,7 +94,7 @@ article a:hover {
 }
 .dark a {
     color: white;
-    border: 2px solid #9e9e9e;
+    border: 1mm solid #9e9e9e;
 }
 .dark a:hover {
     font-weight: bold;
@@ -117,7 +106,10 @@ article a:hover {
     opacity: .9;
 }
 
-/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- 
+ * Into The Light
+ * project article with light backgrounds
+ */
 
 .light {
     background-position: center;
@@ -125,14 +117,12 @@ article a:hover {
     background-size: cover;
     color: black;
 }
-
 .light h1, h3 {
     color: #666;
 }
-
 .light a {
     color: black;
-    border: 2px solid black;
+    border: 1mm solid black;
 }
 .light a:hover {
     background-color: #333;
@@ -142,45 +132,29 @@ article a:hover {
     color: #333;
 }
 
-/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- 
+ * Background images for the project articles
+ */
+.orbis   { background-image: url("../img/portfolio2.jpg");  }
+.rollr   { background-image: url("../img/portfolio3.png");  }
+.galitos { background-image: url("../img/portfolio4.jpg" ); }
+.tretto  { background-image: url("../img/portfolio5.png" ); }
 
-.orbis {
-    background-image: url("../img/portfolio2.jpg");
-}
-
-/* ------------------------------------------------------------------------------------------- */
-
-.rollr {
-    background-image: url("../img/portfolio3.png");
-}
-
-/* ------------------------------------------------------------------------------------------- */
-
-.galitos {
-    background-image: url("../img/portfolio4.jpg" );
-}
-
-/* ------------------------------------------------------------------------------------------- */
-
-.tretto {
-    background-image: url("../img/portfolio5.png" );
-}
-
-/* ------------------------------------------------------------------------------------------- */
-
+/* ===========================================================================================
+ * What more?
+ */
 .what-more {
-    /* delete when done */
-    /* display: none; */
-
     background-color: black;
     color: white;
     font-family: 'Work Sans', sans-serif;
-    padding-top: 7%;;
+    padding-top: 7%;
+    min-height: 100vh;
 }
 .what-more h1 {
     margin: 0;
-    font-size: 12em;
+    margin-top: 10%;
     text-align: center;
+    font-size: 15vh;
 }
 .what-more div {
     margin-top: 6%;
@@ -189,29 +163,29 @@ article a:hover {
     padding-bottom: 10%;
 }
 .what-more p {
-    font-size: 1.6em;
     color: #666;
     line-height: 1.8;
-    padding-bottom: 7%
+    padding-bottom: 7%;
+    font-size: 2.5vh;
 }
 .what-more a {
     margin-top: 50%;
     margin-bottom: 6%;
     text-decoration: none;
     color: white;
-    font-size: 3em;
+    font-size: 5vh;
 }
 
-/* ------------------------------------------------------------------------------------------- */
-
+/* ===========================================================================================
+ * Contact pages
+ */
 .contact {
     height: 100vh;
     background-color:white;
     color: black;
     text-align: center;
     font-family: 'Didact Gothic', sans-serif;
-
-    font-size: 1.8em;
+    font-size: 5vh;
     line-height: 2.0;
 }
 .contact ul {
@@ -219,19 +193,19 @@ article a:hover {
     list-style: none;
 }
 .contact a {
-    font-size: 5em;
+    font-size: 12vh;
     text-decoration: none;
     color: black; 
 }
 .contact a:hover {
     text-decoration: underline;
 }
-
-/* ------------------------------------------------------------------------------------------- */
-
 .contact div {
-    margin: 5% 50%;
+    margin: 10% 50%;
+    font-size: 3.0vh;
 }
+
+/* the puling heart :-) */
 .contact:hover div p {
     animation-name: pulsing;
     animation-duration: 0.5s;
@@ -239,7 +213,7 @@ article a:hover {
     animation-iteration-count: infinite;
   }
     @keyframes pulsing {
-    from  { font-size: 1.0em; }
-    to { font-size: 1.2em; }
+    from  { font-size: 3.0vh; }
+    to { font-size: 4vh; }
   }
   
