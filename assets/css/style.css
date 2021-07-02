@@ -23,14 +23,12 @@ head {
     font-family: 'Didact Gothic', sans-serif;
     font-size: 12vh;
     text-transform: uppercase;
-    /* line-height: 130%; */
 }
 .header h2 {
     /* margin: 2% auto; */
     font-family: 'Didact Gothic', sans-serif;
     font-size: 8vh;
     text-transform: uppercase;
-    /* line-height: 130%; */
 }
 
 /* =========================================================================================== 
@@ -82,7 +80,6 @@ article a:hover {
  * Into the Darkness
  * project articles with dark backgrounds
  */
-
 .dark {
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +107,6 @@ article a:hover {
  * Into The Light
  * project article with light backgrounds
  */
-
 .light {
     background-position: center;
     background-repeat: no-repeat;
