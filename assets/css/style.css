@@ -196,11 +196,10 @@ article a:hover {
     text-decoration: underline;
 }
 .contact p {
-    margin: 10% 40%;
-    font-size: 3.0vh;
+    font-size: 6.0vh;
 }
 
-/* the puling heart :-) */
+/* the pulsing heart :-) */
 .contact:hover p {
     animation-name: pulsing;
     animation-duration: 0.5s;
@@ -209,6 +208,6 @@ article a:hover {
   }
   @keyframes pulsing {
     from { transform: scale(1.0); }
-    to   { transform: scale(1.5); }
+    to   { transform: scale(0.5); }
   }
 
